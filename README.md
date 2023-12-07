@@ -8,7 +8,7 @@ There is a pre-built image:
 
 ```
 wget https://github.com/Krowemoh/R83/raw/main/R83-HD.img 
-qemu-system-x86_64 -m 8M -hda R83-HD.img 
+qemu-system-x86_64 -curses -m 8M -drive format=raw,file=R83-HD.img
 ```
 
 You can also load this image into [v86js](https://copy.sh/v86/) and run R83 directly in the browser. Make sure to limit the memory size to 8MB!
