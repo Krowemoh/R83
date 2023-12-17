@@ -17,7 +17,7 @@ You can also load this image into [v86js](https://copy.sh/v86/) and run R83 dire
 
 You will need PCem to build a hard drive with R83 installed on it. You can then continue to use PCem to get into the hard drive or you can use qemu.
 
-- [PCem](https://pcem-emulator.co.uk/downloads.html)
+- [PCem](https://pcem-emulator.co.uk/downloads.html) - Proven on PCem
 
 - [qemu](https://www.qemu.org/)
 
