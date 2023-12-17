@@ -77,98 +77,178 @@ Hit Ok to save everything and this will build out a machine.
 
 Now that the machine is set up, we can install R83. Start the machine we just built by selecting it and then pressing the play button.
 
+If you are using wayland, then you will need to make sure pcem uses x11:
+ 
+```
+GDK_BACKEND=x11 pcem
+```
+
 This will put you at the AMI bios screen. 
 
 1. Press F1 to enter the bios.
+   
+![image](https://github.com/Krowemoh/R83/assets/8527895/8e49a3eb-ec49-47a7-8f52-fce02f197069)
 
-2. Enter Standard CMOS Setup by pressing Enter
+3. Enter Standard CMOS Setup by pressing Enter
     1. Hit enter to get past the warning page
+       
+![image](https://github.com/Krowemoh/R83/assets/8527895/4b837ebf-729d-4ef1-9eb7-217ffbd0b257)
 
-3. Use the arrow keys to navigate the Setup Program. Page Up and Page Down will cycle through options.
+![image](https://github.com/Krowemoh/R83/assets/8527895/9d12e1d1-4b36-402c-95df-e513c5b84606)
+
+4. Use the arrow keys to navigate the Setup Program. Page Up and Page Down will cycle through options.
     1. Set Hard Disk C: Type to 47 = User Type
         i. This will let you set the Cylinders, Head, Sect and Size to the ones that you saved above.
     2. Set Floppy Drive A: to 720KB, 3 1/2"
+    3. Press Escape to exit the Standard CMOS Setup
+  
+![image](https://github.com/Krowemoh/R83/assets/8527895/b6cd8f76-7535-4e4e-8c73-891f09412c36)
 
-    3. Press Escape to exit the Standard CMOS Setup 
-
-4. Use the arrow keys to go to Write to CMOS and Exit
+5. Use the arrow keys to go to Write to CMOS and Exit
     1. Enter Y to Write it out and Exit
+       
+![image](https://github.com/Krowemoh/R83/assets/8527895/7732e82d-3456-4eb5-8be4-ae91615646d2)
 
-5. We should be returned to the bios, we need to press F1 to enter the bios again.
+6. We should be returned to the bios, we need to press F1 to enter the bios again.
+   
+![image](https://github.com/Krowemoh/R83/assets/8527895/9e3c9ac4-af85-4fcc-b3f7-37a2b1bf4915)
 
-6. Press Escape and then Y to exit without saving.
+8. Press Escape and then Y to exit without saving.
+   
+![image](https://github.com/Krowemoh/R83/assets/8527895/d9cf12d2-8b89-4c05-8356-0fed051daba3)
 
-7. Now it will continue through and it will ask to insert a BOOT diskette.
+10. Now it will continue through and it will ask to insert a BOOT diskette.
     1. Right click on the PCem window
     2. Disc -> Change Drive A:
     3. Select the patched disk disk1.patched.img
     4. Once selected, press Enter
+       
+![image](https://github.com/Krowemoh/R83/assets/8527895/679acbad-71da-4b14-81d2-0fbb0ac9d454)
 
-8. We should see the Disk being read and Pick is ready to be installed.
+![image](https://github.com/Krowemoh/R83/assets/8527895/6c9eec4c-50d0-4a00-a63d-c601e8abbaf3)
 
-9. We should hit the Monitor options now.
+![image](https://github.com/Krowemoh/R83/assets/8527895/1ac4269e-8a09-42b9-bbb1-f5a7e872ab2f)
+
+9. We should see the Disk being read and Pick is ready to be installed.
+
+![image](https://github.com/Krowemoh/R83/assets/8527895/defaf3ff-056a-4d48-b994-6a9c05a8f1e9)
+
+11. We should hit the Monitor options now.
     1. Press T to disable the hard disk scan. This will speed things up. 
     2. Press Enter
 
-10. It will list out the installed serial cards.
+![image](https://github.com/Krowemoh/R83/assets/8527895/7dbbdf36-806d-461b-b141-7da49ba39cda)
+
+12. It will list out the installed serial cards.
     1. Press Y to continue
+       
+![image](https://github.com/Krowemoh/R83/assets/8527895/2f191751-ebd6-45b7-bc9b-dc0822b4996f)
 
-11. Now it will say the ABS area is being initialized. Be patient.
+13. Now it will say the ABS area is being initialized. Be patient.
+    
+![image](https://github.com/Krowemoh/R83/assets/8527895/cb4c7b18-153b-4e4d-95aa-53c7c398d4e5)
 
-12. The next prompt is to put in the next disk. 
+![image](https://github.com/Krowemoh/R83/assets/8527895/9aaa036d-bf15-4182-beaf-55466e3ce13b)
+
+
+15. The next prompt is to put in the next disk. 
     1. Right click on the PCem window and change Drive A to disk2.img
     2. Press C to continue
+       
+![image](https://github.com/Krowemoh/R83/assets/8527895/d80522ea-d6ee-4450-a2fd-35bca41808df)
 
-13. This should take a second and then will display some information about the entire system. It will then put you at the Media Selection menu.
+![image](https://github.com/Krowemoh/R83/assets/8527895/a2794411-7d46-424f-9ab6-05f0e1d04c0b)
+
+16. This should take a second and then will display some information about the entire system. It will then put you at the Media Selection menu.
     1. Press S for the Standard density floppy
+       
+![image](https://github.com/Krowemoh/R83/assets/8527895/f126b6c0-a54e-40b8-b71b-dd5cce8eb271)
 
-14. Now it will prompt you to enter the Pick Data Files disk.
+![image](https://github.com/Krowemoh/R83/assets/8527895/6c4fe191-8f46-44a0-a13e-ea2d6dd1eacc)
+
+17. Now it will prompt you to enter the Pick Data Files disk.
     1. Right click on PCem window and Change Drive A to the data1.img
     2. Press C to continue
+       c
+![image](https://github.com/Krowemoh/R83/assets/8527895/8ee5f51a-0c65-44b7-bb02-9b5bd62a5d04)
 
-15. You will see a list of files being setup and copied.
+18. You will see a list of files being setup and copied.
 
-16. Once the previous step finishes, you will be prompted for the next data disk.
+![image](https://github.com/Krowemoh/R83/assets/8527895/ea914929-5003-4958-85ab-0ca36da4e863)
+
+19. Once the previous step finishes, you will be prompted for the next data disk.
     1. Right click on the PCem window and change Drive A to the data2.img 
     2. Press C to continue
 
-17. Watch as some more files get set up.
+![image](https://github.com/Krowemoh/R83/assets/8527895/7a10b342-001f-47b3-a9d7-7d45f6ac9dde)
 
-18. The next prompt is to Initialize the ABS frames.
+20. Watch as some more files get set up.
+    
+![image](https://github.com/Krowemoh/R83/assets/8527895/296e5e43-46f4-4ea3-a1dc-d52f4f1c0765)
+
+22. The next prompt is to Initialize the ABS frames.
     1. Press Y
+       
+![image](https://github.com/Krowemoh/R83/assets/8527895/f3af7804-f3f7-43d6-b000-638c42b75b4b)
 
-19. Now you will be prompted to enter in a Country Code
+![image](https://github.com/Krowemoh/R83/assets/8527895/fd7dadd0-9d29-4102-a269-f5b7007cf830)
+
+23. Now you will be prompted to enter in a Country Code
     1. I use US, so press Enter without entering anything as it's the default
 
-20. The next prompt askes for your keyboard type.
+![image](https://github.com/Krowemoh/R83/assets/8527895/9cdb3cb5-1053-43aa-b9e6-c3472ffd7dd4)
+
+24. The next prompt askes for your keyboard type.
     1. Press B for the 101 keys keyboard
+       
+![image](https://github.com/Krowemoh/R83/assets/8527895/05b7d15d-90c8-4ce9-867e-09be887cfeba)
 
-21. The next prompt let's you set the shutdown delay, the default is 512.
+25. The next prompt let's you set the shutdown delay, the default is 512.
     1. Press Enter for the default
+       
+![image](https://github.com/Krowemoh/R83/assets/8527895/605a2834-d8e4-4b73-a0ee-b245d0ae07c2)
 
-22. The next prompt is to set the date.
+26. The next prompt is to set the date.
+    
+![image](https://github.com/Krowemoh/R83/assets/8527895/656a19aa-76b5-49db-9665-24fda23a2ea1)
 
-23. The next prompt is to set the time. 
+28. The next prompt is to set the time.
 
-24. The next prompt is to restore an account from a backup.
+![image](https://github.com/Krowemoh/R83/assets/8527895/a3ba7acf-c117-43e5-8133-6d4bd2beed5c)
+
+30. The next prompt is to restore an account from a backup.
     1. Press N as I don't have an account to restore.
- 
-25. The next prompt is to update the accounts.
+       
+![image](https://github.com/Krowemoh/R83/assets/8527895/5a5ee073-cb55-4215-88d8-7215a527b6aa)
+
+31. The next prompt is to update the accounts.
     1. Press Y because why not.
+       
+![image](https://github.com/Krowemoh/R83/assets/8527895/7db1d21f-0751-44c9-83b6-28ba9c6130d9)
 
-26. Watch in panic as illegals and protected fly by.
+32. Watch in panic as illegals and protected fly by.
 
-27. The next prompt will ask to create any new accounts
+33. The next prompt will ask to create any new accounts
     1. Press N for not right now.
+       
+![image](https://github.com/Krowemoh/R83/assets/8527895/b0ad347f-c18b-464e-a333-4af0aab8923b)
 
-28. The next prompt is to set up passwords.
+34. The next prompt is to set up passwords.
     1. Press N because security is for wimps.
- 
-29. SYSTEM setup completed.
+       
+![image](https://github.com/Krowemoh/R83/assets/8527895/fe16cd99-eb8b-4d9a-906f-79b6b7fc96b3)
 
-30. Press T to Enter TCL
+35. SYSTEM setup completed.
+    
+![image](https://github.com/Krowemoh/R83/assets/8527895/ab8d3d0a-3cc0-4306-a4c4-ad27379293c0)
 
-We should now be sitting at TCL in the PICK-SETUP account.
+37. Press T to Enter TCL
+    
+![image](https://github.com/Krowemoh/R83/assets/8527895/59011a6e-a8f0-41d1-bc6e-e637227bcdb3)
+
+We should now be sitting at TCL in the PICK-SETUP account, we can LOGTO SYSPROG.
+
+![image](https://github.com/Krowemoh/R83/assets/8527895/83515f7d-9cf4-46b4-b5ea-cf1ff0855fb4)
 
 ### Minutiae
 
@@ -194,5 +274,3 @@ e8 1b 00 90 90 58 80 f0
 ```
 
 Both the patched and original version are here. 
-
-
