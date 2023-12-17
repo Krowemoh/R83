@@ -6,6 +6,12 @@ This is PC 3 R83 V3.1 04 July 1990 - 2 User
 
 This is working with PCem 17 under Arch Linux.
 
+## Download this repo
+
+```
+git clone https://github.com/Krowemoh/R83.git
+```
+
 ## Creating a AMI 486 Clone
 
 To get R83 going, we will need to first create the universe.
