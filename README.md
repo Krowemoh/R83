@@ -35,6 +35,12 @@ To get R83 going, we will need to first create the universe.
 
 1. Launch PCem
 
+If you are using wayland, then you will need to make sure pcem uses x11:
+ 
+```
+GDK_BACKEND=x11 pcem
+```
+
 ![image](https://github.com/Krowemoh/R83/assets/8527895/095c9f92-78c4-43bf-8ab4-6501054a93f6)
 
 4. Click on the New button and enter a new name
@@ -76,12 +82,6 @@ Hit Ok to save everything and this will build out a machine.
 ### Installing R83
 
 Now that the machine is set up, we can install R83. Start the machine we just built by selecting it and then pressing the play button.
-
-If you are using wayland, then you will need to make sure pcem uses x11:
- 
-```
-GDK_BACKEND=x11 pcem
-```
 
 This will put you at the AMI bios screen. 
 
