@@ -169,7 +169,7 @@ This will put you at the AMI bios screen.
 17. Now it will prompt you to enter the Pick Data Files disk.
     1. Right click on PCem window and Change Drive A to the data1.img
     2. Press C to continue
-       c
+
 ![image](https://github.com/Krowemoh/R83/assets/8527895/8ee5f51a-0c65-44b7-bb02-9b5bd62a5d04)
 
 18. You will see a list of files being setup and copied.
