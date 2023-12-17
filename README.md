@@ -222,7 +222,7 @@ This will put you at the AMI bios screen.
 ![image](https://github.com/Krowemoh/R83/assets/8527895/5a5ee073-cb55-4215-88d8-7215a527b6aa)
 
 31. The next prompt is to update the accounts.
-    1. Press Y because why not.
+    1. Press N
        
 ![image](https://github.com/Krowemoh/R83/assets/8527895/7db1d21f-0751-44c9-83b6-28ba9c6130d9)
 
