@@ -35,19 +35,27 @@ To get R83 going, we will need to first create the universe.
 
 1. Launch PCem
 
-2. Click on the New button and enter a new name
+![image](https://github.com/Krowemoh/R83/assets/8527895/095c9f92-78c4-43bf-8ab4-6501054a93f6)
 
-3. Set up the Motherboard tab 
+4. Click on the New button and enter a new name
+   
+![image](https://github.com/Krowemoh/R83/assets/8527895/29898376-8eb0-4da0-a488-861ec1dfc9f1)
+
+6. Set up the Motherboard tab 
     1. Set Machine to [486] AMI 486 Clone
     2. CPU should be Intel i486DX2/66
     3. Memory should be 8MB
 
-4. Set up the Hard Drive tab
+![image](https://github.com/Krowemoh/R83/assets/8527895/62d0f09f-30f9-4a75-9b0e-fddad9ddef68)
+
+7. Set up the Hard Drive tab
     1. Set HDD to [IDE] Standard IDE
     2. Set FDD1 to 3.5" 720k
     3. Set FDD2 to None
 
-5. Create a new hard drive
+![image](https://github.com/Krowemoh/R83/assets/8527895/059967a8-2f18-4f0f-b0e3-4a9193d69919)
+
+8. Create a new hard drive
     1. Click on the new hard drive button, this will bring up a new tab.
     2. Set Image Format to Raw
     3. Set New File name
@@ -57,9 +65,13 @@ To get R83 going, we will need to first create the universe.
     7. Cylinders should be 50.
     8. Type is Custom
 
+![image](https://github.com/Krowemoh/R83/assets/8527895/274fdcb6-71da-40c6-8dcf-890607507986)
+
 You will need to remember the sectors, heads and cylinder numbers as we will need it to set up the bios. 
 
 Hit Ok to save everything and this will build out a machine. 
+
+![image](https://github.com/Krowemoh/R83/assets/8527895/bbc66d0f-d551-4c88-b41f-ba07423801b8)
 
 ### Installing R83
 
